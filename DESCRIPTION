@@ -9,4 +9,5 @@ Description: The function euclidean get the GCD of two integers while
 License: Apaches Licence
 Encoding: UTF-8
 LazyData: true
+Suggests: testthat
 RoxygenNote: 6.0.1
