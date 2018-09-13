@@ -32,14 +32,15 @@ dijkstra <- function(graph, init_node){
     mindistvertex <- Qset$vertex[mindistindex]   # getting the vertex to which we have the minimum distance
     Qset <- Qset[-c(mindistindex),]  # deleting the entry from qset which has minimum distance
 
-    neighbours <- filter(graph,v1==mindistvertex)$v2  # getting the neighbours for min distance entry that we got in the step above
+    neighbours <- graph[graph$v1==mindistvertex,]$v2 # getting the neighbours for min distance entry that we got in the step above
 
     # in the loop below we are going through all the neighbour vertex and finding the
     # distance for each node from the previous node ( which is mindistvertex)
     # then checks if the distance of the node which is already populated is less than the
     #distance that we calculated now and if so populate the new distance(which is the shortest)
     for (n in neighbours){
-      g1 <- filter(graph, v1==mindistvertex, v2==n) # filter the graph to have entries which corresponds to the mindistvertex and the current neighbour
+      g <- graph[graph$v1==mindistvertex,]
+      g1 <- g[g$v2==n,] # filter the graph to have entries which corresponds to the mindistvertex and the current neighbour
       new_distance <- mindistance + g1$w  # calculate the distance of neighbour from mindisvertex
       if(new_distance < result[result$vertex==n,]$dist){  # populate the distance if it is less that the distance already calculated for that vertex.
         result[result$vertex==n,]$dist <- new_distance
@@ -52,4 +53,4 @@ dijkstra <- function(graph, init_node){
 }
 
 
-
+dijkstra(graph = data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6),v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5),w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9)),init_node = 1)
