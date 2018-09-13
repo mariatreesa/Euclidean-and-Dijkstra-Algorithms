@@ -6,7 +6,7 @@ Author: Maria Treesa, Brian Mainde, Omkar
 Maintainer: The package maintainer <mariatreesaa@gmail.com>
 Description: The function euclidean get the GCD of two integers while 
 	djikstra function returns the shortest path from an initial node.
-License: Apaches Licence
+License: Apaches License
 Encoding: UTF-8
 LazyData: true
 Suggests: testthat
