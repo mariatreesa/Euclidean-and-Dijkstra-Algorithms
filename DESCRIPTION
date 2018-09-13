@@ -2,11 +2,11 @@ Package: Lab3R
 Type: Package
 Title: Implements the Euclidean algorithm (to be added is the djikstra)
 Version: 0.1.0
-Author: Maria Treesa, Brian Mainde, Omkar
+Author: Maria Treesa, Brian Masinde, Omkar
 Maintainer: The package maintainer <mariatreesaa@gmail.com>
 Description: The function euclidean get the GCD of two integers while 
 	djikstra function returns the shortest path from an initial node.
-License: Apaches License
+License: Apache License
 Encoding: UTF-8
 LazyData: true
 Suggests: testthat
