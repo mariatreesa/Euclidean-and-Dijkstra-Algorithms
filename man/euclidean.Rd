@@ -13,7 +13,7 @@ euclidean(x, y)
 \item{y}{as numeric}
 }
 \value{
-GCD of x and y
+GCD of x and y . The wikipage link to algorith : <https://en.wikipedia.org/wiki/Euclidean_algorithm>
 }
 \description{
 Function to get greatest common divisor
