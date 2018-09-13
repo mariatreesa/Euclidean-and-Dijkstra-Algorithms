@@ -1,6 +1,14 @@
-# LAB3
-# Authors: Maria Treesa Sebastian(marse306), Brian Masinde, Omkar(omkbh878)
-# Greatest commmon divisor
+#' Function to get greatest common divisor
+#' Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh878)
+#' @param x as numeric
+#' @param y as numeric
+#'
+#' @return GCD of x and y
+#'
+#' @export
+#'
+#' @examples euclidean(100,10000)
+#'
 euclidean <- function(x,y){
   stopifnot(is.numeric(x) || is.numeric(y))
   i<-1
@@ -13,8 +21,5 @@ euclidean <- function(x,y){
   return(x)
 }
 
-euclidean(123612, 13892347912)
-#[1] 4
-euclidean(100, 1000)
-#[1] 100
+
 

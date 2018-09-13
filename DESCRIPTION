@@ -1,11 +1,12 @@
 Package: Lab3R
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Implements the Euclidean algorithm (to be added is the djikstra)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Maria Treesa, Brian Mainde, Omkar
+Maintainer: The package maintainer <mariatreesaa@gmail.com>
+Description: The function euclidean get the GCD of two integers while 
+	djikstra function returns the shortest path from an initial node.
+License: Artistic Licence
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
