@@ -13,7 +13,7 @@ euclidean(x, y)
 \item{y}{as numeric}
 }
 \value{
-GCD of x and y . The wikipage link to algorith : <https://en.wikipedia.org/wiki/Euclidean_algorithm>
+GCD of x and y .
 }
 \description{
 Function to get greatest common divisor
@@ -22,4 +22,7 @@ Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh8
 \examples{
 euclidean(100,10000)
 
+}
+\references{
+<https://en.wikipedia.org/wiki/Euclidean_algorithm>
 }

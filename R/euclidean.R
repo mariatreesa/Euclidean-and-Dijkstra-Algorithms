@@ -3,8 +3,8 @@
 #' @param x as numeric
 #' @param y as numeric
 #'
-#' @return GCD of x and y . The wikipage link to algorith : <https://en.wikipedia.org/wiki/Euclidean_algorithm>
-#'
+#' @return GCD of x and y .
+#' @references <https://en.wikipedia.org/wiki/Euclidean_algorithm>
 #' @export
 #'
 #' @examples euclidean(100,10000)
