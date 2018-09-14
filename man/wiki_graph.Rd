@@ -3,21 +3,21 @@
 \docType{data}
 \name{wiki_graph}
 \alias{wiki_graph}
-\title{Prices of 50,000 round cut diamonds.}
-\format{A data frame with 53940 rows and 10 variables:
+\title{Weights attached to source vertices and destination vertices.}
+\format{A data frame with 18 rows and 3 variables:
 \describe{
-  \item{price}{price, in US dollars}
-  \item{carat}{weight of the diamond, in carats}
+  \item{v1}{id of the source vertices}
+  \item{v2}{id of the destination vertices}
+  \item{w}{weight of the path taken}
   ...
 }}
 \source{
-\url{http://www.diamondse.info/}
+\url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
 }
 \usage{
 wiki_graph
 }
 \description{
-A dataset containing the prices and other attributes of almost 54,000
-diamonds.
+A dataset containing the weights attached to traversing from sources to destinations.
 }
 \keyword{datasets}
