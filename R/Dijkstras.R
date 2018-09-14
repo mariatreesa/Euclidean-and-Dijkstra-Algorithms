@@ -12,6 +12,19 @@
 #'
 dijkstra <- function(graph, init_node ){
 
+  if(!(is.numeric(init_node))){
+    stop("Please enter a valid input for initial node")
+  }
+  if(!(is.data.frame(graph))){
+    stop("Please enter the graph  as a valid data frame")
+  }
+  if(!(colnames(graph) == c("v1", "v2" , "v3"))){
+    stop("Please enter the graph  with correct column names")
+  }
+  if(!(init_node %in% unique(c(graph$v1,graph$v2)))){
+    stop("The initial node given does not exist in the graph")
+  }
+
 
   dist <- c() # initializing an empty distance vector
   vertex = unique(c(graph$v1,graph$v2))  # getting the list of vertex from the input graph
