@@ -12,7 +12,7 @@
   ...
 }}
 \source{
-\url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
+<https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm>
 }
 \usage{
 wiki_graph
