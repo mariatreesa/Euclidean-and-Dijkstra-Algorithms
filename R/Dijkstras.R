@@ -5,7 +5,7 @@
 #'
 #' @return Shortest distance to all vertex from init_node.
 #' @references <https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm>
-#' @export
+#' @export dijkstra as function
 #'
 #' @examples dijkstra(graph = wiki_graph,init_node = 1)
 #'
