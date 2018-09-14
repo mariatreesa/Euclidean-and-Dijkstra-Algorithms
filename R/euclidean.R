@@ -5,7 +5,7 @@
 #'
 #' @return GCD of x and y .
 #' @references <https://en.wikipedia.org/wiki/Euclidean_algorithm>
-#' @export
+#' @export euclidean as function
 #'
 #' @examples euclidean(100,10000)
 #'
