@@ -2,8 +2,7 @@
 % Please edit documentation in R/euclidean.R
 \name{euclidean}
 \alias{euclidean}
-\title{Function to get greatest common divisor
-Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh878)}
+\title{Eucledian Algorithm}
 \usage{
 euclidean(x, y)
 }
@@ -16,8 +15,7 @@ euclidean(x, y)
 GCD of x and y .
 }
 \description{
-Function to get greatest common divisor
-Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh878)
+Eucledian Algorithm
 }
 \examples{
 euclidean(100,10000)
@@ -25,4 +23,7 @@ euclidean(100,10000)
 }
 \references{
 <https://en.wikipedia.org/wiki/Euclidean_algorithm>
+}
+\author{
+Maria ,Masinde, Omkar
 }

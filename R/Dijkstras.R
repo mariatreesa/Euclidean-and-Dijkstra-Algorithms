@@ -1,24 +1,22 @@
-#' Function to get the shortest distance to all the nodes from an initial node
-#' Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh878)
+#' Dijkstra Algoritm
+#'
+#' @author Maria,Masinde,Omkar
 #' @param graph as dataframe
 #' @param init_node as numeric
 #'
 #' @return Shortest distance to all vertex from init_node.
 #' @references <https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm>
-#' @export dijkstra as function
+#' @export dijkstra
 #'
 #' @examples dijkstra(graph = wiki_graph,init_node = 1)
 #'
 #'
 dijkstra <- function(graph, init_node ){
 
-  if(!(is.numeric(init_node))){
-    stop("Please enter a valid input for initial node")
+  if(is.numeric(init_node)== F || is.data.frame(graph) ==F){
+    stop("Please enter valid inputs")
   }
-  if(!(is.data.frame(graph))){
-    stop("Please enter the graph  as a valid data frame")
-  }
-  if(!(colnames(graph) == c("v1", "v2" , "v3"))){
+  if(ncol(graph)!= 3||!(all(colnames(graph) == c("v1", "v2" , "w")))){
     stop("Please enter the graph  with correct column names")
   }
   if(!(init_node %in% unique(c(graph$v1,graph$v2)))){
@@ -51,7 +49,8 @@ dijkstra <- function(graph, init_node ){
       g <- graph[graph$v1==previousnode,]
       g1 <- g[g$v2==n,] # filter the graph to have entries which corresponds to the previousnode and the current neighbour
       new_distance <- mindistance + g1$w  # calculate the distance of neighbour from mindisvertex
-      if(new_distance < result[result$vertex==n,]$dist){  # populate the distance if it is less that the distance already calculated for that vertex.
+      # populate the distance if it is less that the distance already calculated for that vertex.
+      if(new_distance < result[result$vertex==n,]$dist){
         result[result$vertex==n,]$dist <- new_distance
         Qset[Qset$vertex==n,]$dist <- new_distance
       }

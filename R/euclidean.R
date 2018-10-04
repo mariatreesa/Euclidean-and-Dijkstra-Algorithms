@@ -1,11 +1,11 @@
-#' Function to get greatest common divisor
-#' Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh878)
+#'  Eucledian Algorithm
+#' @author Maria ,Masinde, Omkar
 #' @param x as numeric
 #' @param y as numeric
 #'
 #' @return GCD of x and y .
 #' @references <https://en.wikipedia.org/wiki/Euclidean_algorithm>
-#' @export euclidean as function
+#' @export euclidean
 #'
 #' @examples euclidean(100,10000)
 #'

@@ -1,6 +1,5 @@
-#' Weights attached to source vertices and destination vertices.
+#' Wiki Graph Data
 #'
-#' A dataset containing the weights attached to traversing from sources to destinations.
 #'
 #' @format A data frame with 18 rows and 3 variables
 #' \describe{

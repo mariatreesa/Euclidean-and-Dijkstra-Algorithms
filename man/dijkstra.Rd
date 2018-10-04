@@ -2,8 +2,7 @@
 % Please edit documentation in R/Dijkstras.R
 \name{dijkstra}
 \alias{dijkstra}
-\title{Function to get the shortest distance to all the nodes from an initial node
-Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh878)}
+\title{Dijkstra Algoritm}
 \usage{
 dijkstra(graph, init_node)
 }
@@ -16,8 +15,7 @@ dijkstra(graph, init_node)
 Shortest distance to all vertex from init_node.
 }
 \description{
-Function to get the shortest distance to all the nodes from an initial node
-Authors: Maria Treesa Sebastian(marse306), Brian Masinde(brima748), Omkar(omkbh878)
+Dijkstra Algoritm
 }
 \examples{
 dijkstra(graph = wiki_graph,init_node = 1)
@@ -26,4 +24,7 @@ dijkstra(graph = wiki_graph,init_node = 1)
 }
 \references{
 <https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm>
+}
+\author{
+Maria,Masinde,Omkar
 }

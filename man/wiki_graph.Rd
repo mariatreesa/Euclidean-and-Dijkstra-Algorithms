@@ -3,7 +3,7 @@
 \docType{data}
 \name{wiki_graph}
 \alias{wiki_graph}
-\title{Weights attached to source vertices and destination vertices.}
+\title{Wiki Graph Data}
 \format{A data frame with 18 rows and 3 variables
 \describe{
   \item{v1}{id of the source vertices}
@@ -17,6 +17,6 @@
 wiki_graph
 }
 \description{
-A dataset containing the weights attached to traversing from sources to destinations.
+Wiki Graph Data
 }
 \keyword{datasets}
