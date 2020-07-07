@@ -2,5 +2,5 @@
 
 This was implemented as a part of Lab assignment at Linköping university. The package has implementations for two algorithms in R.
 
-1. Euclidean Algorithm : https://en.wikipedia.org/wiki/Euclidean algorithm
+1. Euclidean Algorithm : https://en.wikipedia.org/wiki/Euclidean
 2. Dijkstras Algorithm : https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
